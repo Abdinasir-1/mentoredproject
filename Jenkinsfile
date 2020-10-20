@@ -1,7 +1,7 @@
 pipeline {
 	 agent any
 	 stages {
-	 	 stages('Build Images'){
+	 	 stage('Build Images'){
 			 steps {
 				 sh "./scripts/build.sh"
 			 }
@@ -21,7 +21,7 @@ pipeline {
 				sh "./scripts/run.sh"
 			 }
 		}
-		 stages('Test App'){
+		 stage('Test App'){
 			steps {
 				sh "./scripts/test.sh"
 			}
