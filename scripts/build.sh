@@ -1,2 +1,2 @@
 #! /bin/bash
-sudo docker-compose build -t localhost:8082/mentoredprojectapp .
+sudo docker-compose up localhost:8082/mentoredprojectapp .
