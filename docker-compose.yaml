@@ -11,16 +11,16 @@ services:
       dockerfile: Dockerfile
     context: ./service-2
     ports:
-          "5001:5001"
+          "5001:5000"
   service3:
     build:
       dockerfile: Dockerfile
       context: ./service-3
     ports:
-       - "5002:5002"
+       - "5002:5000"
   service4:
     build:
       dockerfile: Dockerfile
       context: ./service-4
     ports:
-       - "5003:5003"
+       - "5003:5000"
