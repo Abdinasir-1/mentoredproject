@@ -5,22 +5,31 @@ services:
       dockerfile: Dockerfile
       context: ./service-1
     ports: 
-      - "5000:5000"
+      - target: 5000
+        published: 5000
+        protocol: tcp
   service2: 
     build: 
       dockerfile: Dockerfile
-    context: ./service-2
+      context: ./service-2
     ports:
-          "5001:5000"
+      - target: 5001
+        published: 5001
+        protocol: tcp
   service3:
     build:
       dockerfile: Dockerfile
       context: ./service-3
     ports:
-       - "5002:5000"
+      - target: 5002
+        published: 5002
+        protocol: tcp
   service4:
     build:
       dockerfile: Dockerfile
       context: ./service-4
     ports:
-       - "5003:5000"
+      - target: 5003
+        published: 5003
+        protocol: tcp
+
