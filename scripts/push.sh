@@ -1,3 +1,3 @@
 # /bin/bash
 
-sudo docker push localhost:8082/mentoredprojectapp
+sudo docker-compose push localhost:8082/{image}
