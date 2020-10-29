@@ -1,3 +1,3 @@
 #! /bin/bash
 
-sudo docker pull localhost:8082/mentoredprojectapp
+sudo docker-compose pull localhost:8082/mentoredprojectapp
