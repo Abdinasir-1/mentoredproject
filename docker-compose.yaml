@@ -1,37 +1,37 @@
 version: '3.7'
 services:
   service1:
-    image: service_1 
     build: 
       dockerfile: Dockerfile
       context: ./service-1
+    image: service_1 
     ports: 
       - target: 5000
         published: 5000
         protocol: tcp
   service2: 
-    image: service_2
     build: 
       dockerfile: Dockerfile
       context: ./service-2
+    image: service_2
     ports:
       - target: 5001
         published: 5001
         protocol: tcp
   service3:
-    image: service_3
     build:
       dockerfile: Dockerfile
       context: ./service-3
+    image: service_3
     ports:
       - target: 5002
         published: 5002
         protocol: tcp
   service4:
-    image: service_4
     build:
       dockerfile: Dockerfile
       context: ./service-4
+    image: service_4
     ports:
       - target: 5003
         published: 5003
