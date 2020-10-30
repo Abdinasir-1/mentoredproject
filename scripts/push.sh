@@ -1,3 +1,3 @@
 # /bin/bash
 
-sudo docker-compose push localhost:8082/{image}
+sudo docker-compose push
