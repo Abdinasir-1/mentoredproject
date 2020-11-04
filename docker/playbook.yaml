@@ -28,10 +28,6 @@
     service:
        name: docker
        state: started
-       # - name: 'Install pip'
-       # community.general.easy_install:
-       #  name: pip
-       #  state: latest
   - name: 'Install Python package Docker using pip'
     pip:
       name: docker
