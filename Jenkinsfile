@@ -3,7 +3,8 @@ pipeline {
 	 stages {
 	 	 stage('Install Docker'){
                          steps {
-                                 sh "./docker/play.sh"
+                                 cd docker
+                                 sh "./play.sh"
                          }
                 }
 		 stage('Test App'){

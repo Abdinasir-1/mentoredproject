@@ -1,2 +1,2 @@
 #! /bin/bash
-sudo ansible-playbook playbook.yaml
+ansible-playbook playbook.yaml
