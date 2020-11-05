@@ -2,6 +2,7 @@
 mkdir -p ~/.local/bin
 echo 'PATH=$PATH:~/.local/bin' >> ~/.bashrc
 source ~/.bashrc
-pip install --force-reinstall ansible ansible-base
+pip unistall ansible
+pip install ansible
 ansible --version
 ansible-playbook playbook.yaml
