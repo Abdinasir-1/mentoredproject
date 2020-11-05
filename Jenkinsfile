@@ -1,6 +1,13 @@
 pipeline {
 	 agent any
 	 stages {
+		 stage('Install Docker'){
+			 steps {
+				 dir ("docker"){
+				 sh "./play.sh"
+				 }	 
+			 } 
+	        }
 		 stage('Test App'){
 			 steps {
 				 sh "./scripts/test.sh"
