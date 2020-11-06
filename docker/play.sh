@@ -1,5 +1,5 @@
 #! /bin/bash
-sudo apt pip install --user ansible
+sudo apt install ansible -y
 ansible-playbook playbook.yaml
 
 sudo apt update
