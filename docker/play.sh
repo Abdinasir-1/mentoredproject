@@ -1,4 +1,7 @@
 #! /bin/bash
+mkdir -p ~/.local/bin
+echo 'PATH=$PATH:~/.local/bin' >> ~/.bashrc
+source ~/.bashrc
 sudo apt install ansible -y
 ansible-playbook playbook.yaml
 
