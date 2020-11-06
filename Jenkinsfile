@@ -1,7 +1,7 @@
 pipeline {
 	 agent any
 	 stages {
-		 stage('Install Docker'){
+		 stage('Install Docker and Docker-Compose'){
 			 steps {
 				 dir ("docker"){
 				 sh "./play.sh"
